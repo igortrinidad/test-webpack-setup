@@ -19,4 +19,14 @@ module.exports = {
     static: "./dist",
     port: 5001,
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: [
+          "style-loader", "css-loader"
+        ],
+      },
+    ],
+  },
 };
