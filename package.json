@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "serve": "concurrently \"npm:watch:webpack\" \"npm:watch:tailwind\"",
     "watch:webpack": "webpack serve --mode development --open",
     "build": "NODE_ENV=production npm run build:tailwind && webpack",
@@ -14,15 +14,22 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "babel-jest": "^29.7.0",
     "concurrently": "^8.2.2",
     "css-loader": "^6.8.1",
     "html-webpack-plugin": "^5.5.3",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jsdom": "^22.1.0",
     "mini-css-extract-plugin": "^2.7.6",
     "style-loader": "^3.3.3",
     "tailwindcss": "^3.3.5",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "webpack-dev-server": "^4.15.1",
+    "whatwg-fetch": "^3.6.19"
   },
   "dependencies": {
     "randomcolor": "^0.6.2"
