@@ -1,0 +1,38 @@
+/* Scrollbars */
+/* ----------------------------------------- */
+
+*::-webkit-scrollbar:vertical {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+*::-webkit-scrollbar:horizontal {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  height: 5px;
+  display: block
+}
+::-webkit-scrollbar-thumb {
+  background: #e4eaf5;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(196, 201, 211)
+}
+
+*::-webkit-scrollbar-corner {
+  display: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

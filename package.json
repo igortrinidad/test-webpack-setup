@@ -7,9 +7,10 @@
     "test": "jest",
     "serve": "concurrently \"npm:watch:webpack\" \"npm:watch:tailwind\"",
     "watch:webpack": "webpack serve --mode development --open",
-    "build": "NODE_ENV=production npm run build:tailwind && webpack",
-    "watch:tailwind": "npx tailwindcss -i ./src/styles/stlyes.css -o ./src/styles/output.css --watch",
-    "build:tailwind": "npx tailwindcss -i ./src/styles/stlyes.css -o ./src/styles/output.css --minify"
+    "build:webpack": "NODE_ENV=production webpack",
+    "watch:tailwind": "npx tailwindcss -i ./src/styles/stlyes.css -o ./dist/styles/output.css --watch",
+    "build:tailwind": "npx tailwindcss -i ./src/styles/stlyes.css -o ./dist/styles/output.css --minify",
+    "build": "./scripts/build.sh"
   },
   "author": "",
   "license": "ISC",

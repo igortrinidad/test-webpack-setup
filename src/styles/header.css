@@ -1,0 +1,17 @@
+header {
+  @apply
+    sticky
+    top-0
+    left-0 right-0
+    z-40
+    w-full
+    backdrop-blur
+    transition-colors
+    duration-500
+    lg:border-slate-900/10
+    border-slate-50/[0.06]
+    bg-transparent
+    flex justify-between
+    p-4
+  ;
+}

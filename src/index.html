@@ -4,11 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test Webpack Setup</title>
+    <link rel="stylesheet" href="/styles/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
-  <body
-    id="body"
-    class="min-h-screen min-w-screen overflow-y-auto bg-red-200 p-8"
-  >
-    <ul id="posts-list" class="bg-white rounded p-2"></ul>
+  <body id="body">
+    
+    <header class="header">
+      <h1 class="w-full text-left text-3xl font-bold">Planhat Test</h1>
+    </header>
+
+    <div class="container flex flex-col mt-12">
+      <custom-input label="Name" type="text" error-message="This field is required!" required>
+      </custom-input>
+      <ul id="posts-list" class="w-full bg-white rounded"></ul>
+    </div>
+
+
   </body>
 </html>
